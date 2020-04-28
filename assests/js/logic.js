@@ -7,10 +7,10 @@ var playBtn = document.getElementById("playBtn");
 var scoreDisplay = document.querySelector("#score");
 var fakePanel = document.getElementById("fakePanel");
 var outputDisplay = document.querySelector("#outputDisplay");
-var colors = ["red","blue","cyan","purple","pink","yellow","red","blue","cyan","purple","pink","yellow"];
+var colors = ["red","blue","cyan","purple","pink","yellow","grey","white","orange","fuchsia","khaki","lime","teal","salmon","red","blue","cyan","purple","pink","yellow","grey","white","orange","fuchsia","khaki","lime","teal","salmon"];
 var bgColor = "rgb(61, 60, 60)";
 var flippedColor;
-const NUM_OF_PANELS = 12;
+const NUM_OF_PANELS = 28;
 const NUM_OF_PAIRS = NUM_OF_PANELS /2 ;
 //init Game
 var firstFlip = true;
@@ -48,7 +48,7 @@ for(let i=0;i<panels.length;i++){
                         flippedPanel.style.backgroundColor = bgColor;
                         panels[i].style.backgroundColor = bgColor;
                     }
-                },100);
+                },500);
                 scoreDisplay.textContent=(++score);
             }
         }
@@ -80,7 +80,7 @@ function resetGame(){
         for(let i = 0;i<panels.length;i++){
             panels[i].style.backgroundColor = bgColor;
         }
-    },700);
+    },1000);
 }
 
 function resetPanelStyling(){

@@ -60,11 +60,11 @@ body{
 #playDisplay{
     margin-top : 10px;
     text-align:center;
-    height : 70px;
+    height : 50px;
 }
 #playBtn{
     width : 200px;
-    height : 70px;
+    height : 50px;
     font-family: inherit;
     font-size : 1.5rem;
     font-weight: bold;
@@ -91,11 +91,11 @@ body{
 
 div#container{
     display : grid;
-    grid-template-columns: 150px 150px 150px 150px;
-    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px 150px;
     grid-column-gap: 15px;
     grid-row-gap: 15px;
-    margin-top : 20px;
+    margin-top : 0;
     justify-content: center;
 } 
 
