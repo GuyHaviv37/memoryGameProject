@@ -1,0 +1,45 @@
+body{
+    background : rgb(35, 114, 233);
+    margin : 0;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+#strip{
+    height : 40px;
+    background : white;
+    margin : 0;
+}
+
+#playBtn{
+    width : 200px;
+    height : 70px;
+    margin : 25px 40%;
+    transition: height 1s ease-in-out;
+
+}
+#playBtn.hide{
+    display : none;
+}
+
+div#container{
+    max-width : 700px;
+    margin : 20px auto;
+}
+
+.shownPanel{
+    float : left;
+    width : 20%;
+    padding-bottom:20%;
+    margin : 1%;
+    background : rgb(61, 60, 60);
+    border : 1px solid black;
+    transition: background-color 0.5s;
+}
+
+.matched{
+    border : 1px solid green;
+}
