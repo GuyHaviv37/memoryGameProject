@@ -23,19 +23,18 @@ body{
     margin : 0;
     background : rgb(221, 212, 212);
     padding : 0;
-    /* text-align: center; */
-    font-family: inherit;
-    font-size: 1.5rem;
-    font-weight: 500;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 
 }
-#stripContainer{
-    width: 1140px;
+/* #stripContainer{
+    width: 500px;
     margin : 0 auto;
     display: grid;
     grid-template-columns: 2fr 4fr 2fr;
-}
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 500;
+} */
 #resetBtn{
     width : 100px;
     height : 40px;
@@ -77,9 +76,6 @@ body{
 }
 
 
-
-
-
 #playDisplay{
     margin-top : 10px;
     text-align:center;
@@ -111,28 +107,51 @@ body{
     opacity: 0;
     transition: opacity 0.7s;
 }
-
+#stripContainer{
+    width: 930px;
+    margin : 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
 div#container{
     display : grid;
-    grid-template-columns: 150px 150px 150px 150px 150px 150px 150px;
-    grid-template-rows: 150px 150px 150px 150px;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
     grid-column-gap: 15px;
     grid-row-gap: 15px;
     margin-top : 0;
     justify-content: center;
 } 
+@media (min-width:1100px){
+    div#container{
+        grid-template-columns: 125px 125px 125px 125px 125px 125px 125px;
+        grid-template-rows: 125px 125px 125px 125px;
+    }
+    #stripContainer{
+        width: 1000px;
+    } 
+}
+@media (min-width:1800px){
+    div#container{
+        grid-template-columns: 150px 150px 150px 150px 150px 150px 150px;
+        grid-template-rows: 150px 150px 150px 150px;
+    }
+    #stripContainer{
+        width: 1140px;
+        grid-template-columns: 2fr 4fr 2fr;
+    } 
+}
 
 .shownPanel{
-    /* float : left;
-    width : 20%;
-    padding-bottom:20%;
-    margin : 1%; */
     background : rgb(61, 60, 60);
-    /* border : 1px solid black; */
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
     transition: background-color 1s;
     border-radius: 15%;
 }
+
 
 .matched{
     border : 3px solid green;

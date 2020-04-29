@@ -14,6 +14,7 @@ var flippedColor;
 const NUM_OF_PANELS = 28;
 const NUM_OF_PAIRS = NUM_OF_PANELS /2 ;
 //init Game
+var gameStarted = false;
 var firstFlip = true;
 var scoreA , scoreB;
 var player = "Player A";
@@ -25,7 +26,7 @@ randomizeColors();
 for(let i=0;i<panels.length;i++){
     panels[i].addEventListener("click",function(){
         console.log("CLICKED");
-        if(!panels[i].classList.contains("matched")){
+        if(!panels[i].classList.contains("matched") && gameStarted){
             if(firstFlip){
                 panels[i].style.backgroundColor = colors[i];
                 flippedPanel = panels[i];
@@ -57,6 +58,7 @@ for(let i=0;i<panels.length;i++){
 playBtn.addEventListener("click",function(){
     this.textContent="";
     this.classList.add("hide");
+    gameStarted = true;
     setTimeout(resetPanelStyling,500);
     setTimeout(resetGame,1500);
 });
