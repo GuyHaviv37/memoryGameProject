@@ -8,7 +8,7 @@ var scoreADisplay = document.querySelector("#scoreA");
 var scoreBDisplay = document.querySelector("#scoreB");
 var fakePanel = document.getElementById("fakePanel");
 var outputDisplay = document.querySelector("#outputDisplay");
-var colors = ["red","blue","cyan","purple","pink","yellow","grey","white","orange","fuchsia","khaki","lime","teal","salmon","red","blue","cyan","purple","pink","yellow","grey","white","orange","fuchsia","khaki","lime","teal","salmon"];
+var colors = ["red","blue","cyan","yellowgreen","yellow","grey","white","orange","fuchsia","lime","teal","darkred","burlywood","blueviolet","red","blue","cyan","yellowgreen","yellow","grey","white","orange","fuchsia","lime","teal","darkred","burlywood","blueviolet"]
 var bgColor = "rgb(61, 60, 60)";
 var flippedColor;
 const NUM_OF_PANELS = 28;
