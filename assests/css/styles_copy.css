@@ -79,7 +79,7 @@ body{
 #playDisplay{
     margin-top : 10px;
     text-align:center;
-    height : 50px;
+    /* height : 50px; */
 }
 #playBtn{
     width : 200px;
@@ -122,15 +122,15 @@ div#container{
     display : grid;
     width : 80%;
     height : 600px;
-    margin : 0 auto;
-    grid-template-columns: repeat(7,100px);
-    grid-template-rows: repeat(4,100px);
+    margin : 30px auto;
+    grid-template-columns: repeat(7,125px);
+    grid-template-rows: repeat(4,125px);
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
     justify-content: center;
 } 
 
-@media (min-height : 750px){
+@media (min-height : 850px)  {
     div#container{
         grid-template-columns: repeat(7,150px);
         grid-template-rows: repeat(4,150px);

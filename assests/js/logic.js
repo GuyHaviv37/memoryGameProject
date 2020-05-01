@@ -3,6 +3,7 @@
 // Please Hold while resetting
 var panels = document.querySelectorAll(".panel");
 var resetBtn = document.querySelector("#resetBtn");
+var playDisplay = document.querySelector("#playDisplay");
 var playBtn = document.getElementById("playBtn");
 var scoreADisplay = document.querySelector("#scoreA");
 var scoreBDisplay = document.querySelector("#scoreB");
@@ -59,6 +60,7 @@ playBtn.addEventListener("click",function(){
     this.textContent="";
     this.classList.add("hide");
     gameStarted = true;
+    playDisplay.innerHTML = "";
     setTimeout(resetPanelStyling,500);
     setTimeout(resetGame,1500);
 });
