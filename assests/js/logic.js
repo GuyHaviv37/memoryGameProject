@@ -15,6 +15,21 @@ var flippedColor;
 const NUM_OF_PANELS = 28;
 const NUM_OF_PAIRS = NUM_OF_PANELS /2 ;
 //init Game
+
+//test of window utilty
+const container = document.querySelector("#container");
+let winWidth = window.innerWidth;
+let winHeight = window.innerHeight;
+container.style.width = `${winWidth*0.5}px`
+container.style.height = `${winHeight*0.6}px`
+window.onresize = function(){
+    let winWidth = window.innerWidth;
+    let winHeight = window.innerHeight;
+    container.style.width = `${winWidth*0.6}px`
+    container.style.height = `${winHeight*0.6}px`
+}
+
+
 var gameStarted = false;
 var firstFlip = true;
 var scoreA , scoreB;
@@ -60,7 +75,7 @@ playBtn.addEventListener("click",function(){
     this.textContent="";
     this.classList.add("hide");
     gameStarted = true;
-    playDisplay.innerHTML = "";
+    playBtn.remove();
     setTimeout(resetPanelStyling,500);
     setTimeout(resetGame,1500);
 });
